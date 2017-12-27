@@ -37,17 +37,6 @@ struct buku {
     float harga;
 };
 
-struct base {
-    char name[255];
-    float price;
-};
-
-struct topping {
-    int id;
-    char name[255];
-    float price;
-};
-
 // TODO: update this struct
 struct transactionData {
     int userId;
@@ -55,15 +44,12 @@ struct transactionData {
 };
 
 int currentSupportedUsers = 10;
-int maxToppings = 5;
 int latestTransactionIndex = 0;
 
 int loginUserIndex = -1;
 userData loggedUser;
 
 userData users[10];
-topping toppings[50];
-base bases[50];
 buku bukuBuku[50];
 transactionData transactions[1000000];
 
