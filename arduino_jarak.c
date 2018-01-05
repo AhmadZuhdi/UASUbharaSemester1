@@ -19,7 +19,6 @@ void loop() {
   long duration, distance;
   duration = pulseIn(echoPin, HIGH);
   distance = (duration/2);
-  Serial.print("duration: "); Serial.print(distance / 29.1); Serial.print("\n");
-  Serial.print("distance: "); Serial.print(distance); Serial.print("\n");
+  Serial.print("Jarak: "); Serial.print(distance / 29.1); Serial.print("Cm\n");
   delay(500);
 }
