@@ -53,12 +53,12 @@ void loop() {
 
   lcd.clear();
   lcd.print("Suhu: ");
-  lcd.print(celcius);
+  lcd.print(dhTemp);
   lcd.print("C"); 
   
   lcd.setCursor(0, 1); // set lcd ke line 2
-  lcd.print("DHT: ");
-  lcd.print(dhTemp);
+  lcd.print("Klmbpn: ");
+  lcd.print(dhHumi);
   
   delay(2000);
 }
